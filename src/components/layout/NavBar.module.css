@@ -1,0 +1,18 @@
+.navText {
+    font-weight: bold;
+    line-height: 1.2rem;
+    font-size: 17px
+}
+
+.navText span {
+    float: left;
+    clear: both;
+}
+
+.name {
+    padding-right: 40px;
+}
+
+.icon {
+    padding-right: 10px
+}
