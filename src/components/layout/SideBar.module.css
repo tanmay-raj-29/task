@@ -1,0 +1,30 @@
+.sidebar {
+    position: relative;
+    height: 100vh;
+    width: 250px;
+    margin-left: 30px;
+    background-color: #F8F8F8;
+}
+
+.sidebar-item {
+    text-decoration: none;
+    display: flex;
+    align-items: left;
+    place-content: flex-start;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555555;
+    transition: color 0.3s ease-in-out;
+    border: none;
+    background: none;
+}
+
+.active {
+    color: rgb(244, 76, 78);
+    background-color: rgb(241, 217, 217)
+}
+
+.icon {
+    padding-right: 8px;
+}
