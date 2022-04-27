@@ -1,0 +1,94 @@
+.stack {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.line {
+    margin-left: 11px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.stack-item {
+    text-decoration: none;
+    display: flex;
+    /* align-items: left; */
+    padding: 0.5rem 0.5rem;
+    font-weight: 500;
+    color: #555555;
+    transition: color 0.3s ease-in-out;
+    border: none;
+    background: none;
+}
+
+.active {
+    color: rgb(244, 76, 78);
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+.table {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.table-options {
+    margin-bottom: 20px;
+}
+
+.table-options button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(182, 57, 59);
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.table-options i {
+    padding-left: 20px;
+}
+
+.sync {
+    float: right;
+    padding-right: 15px;
+}
+
+.sync p {
+    padding-left: 10px;
+    display: inline;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.table-button {
+    margin-left: 35px;
+    border-radius: 20px;
+    width: 70%;
+    background-color: rgb(254, 180, 181);
+    color: rgb(254, 30, 28);
+}
+
+.all-access {
+    margin-left: 35px;
+    border-radius: 20px;
+    width: 70%;
+    background-color: rgb(190, 230, 206);
+    color: rgb(95, 195, 138);
+}
+
+.table-cell-center {
+    text-align: center;
+}
+
+.role {
+    text-decoration: none;
+    color: black
+}
