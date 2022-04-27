@@ -1,5 +1,6 @@
 import { Container, Navbar } from 'react-bootstrap';
 import classes from "./NavBar.module.css";
+import Icon from "../UI/icon";
 
 const NavBar = () => {
     return (
@@ -16,16 +17,16 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end">
                     <span>
-                        <i class={`bi bi-person-circle ${classes.icon}`}></i>
+                        <Icon class="bi bi-person-circle" />
                     </span>
                     <Navbar.Text className={classes.name}>
                         Kishore
                     </Navbar.Text>
                     <span>
-                        <i class={`bi bi-bell ${classes.icon}`}></i>
+                        <Icon class="bi bi-bell" />
                     </span>
                     <span>
-                        <i class={`bi bi-question-circle ${classes.icon}`}></i>
+                        <Icon class="bi bi-question-circle" />
                     </span>
 
                 </Navbar.Collapse>
