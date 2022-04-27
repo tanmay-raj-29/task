@@ -1,0 +1,53 @@
+.stack {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.line {
+    margin-left: 11px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.stack-item {
+    text-decoration: none;
+    display: flex;
+    /* align-items: left; */
+    padding: 0.5rem 0.5rem;
+    font-weight: 500;
+    color: #555555;
+    transition: color 0.3s ease-in-out;
+    border: none;
+    background: none;
+}
+
+.active {
+    color: rgb(244, 76, 78);
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+.table {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.table-options {
+    margin: 25px;
+    padding-left: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+}

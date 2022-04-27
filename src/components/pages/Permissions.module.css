@@ -1,7 +1,5 @@
-.stack {
-    margin-left: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+.icon {
+    padding-right: 5px;
 }
 
 .line {
@@ -10,10 +8,15 @@
     padding-top: 0px;
 }
 
+.stack {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 .stack-item {
     text-decoration: none;
     display: flex;
-    /* align-items: left; */
     padding: 0.5rem 0.5rem;
     font-weight: 500;
     color: #555555;
@@ -22,12 +25,16 @@
     background: none;
 }
 
-.active {
-    color: rgb(244, 76, 78);
+.sync {
+    float: right;
 }
 
-.icon {
-    padding-right: 5px;
+.sync p {
+    padding-left: 10px;
+    display: inline;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .table {
@@ -55,15 +62,6 @@
     padding-left: 20px;
 }
 
-.sync {
-    float: right;
-    padding-right: 15px;
-}
-
-.sync p {
-    padding-left: 10px;
-    display: inline;
-    color: gray;
-    font-size: 12px;
-    font-weight: bold;
+.active {
+    color: rgb(244, 76, 78);
 }
