@@ -1,5 +1,6 @@
 import { Container, Form, Stack, Table } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import PermissionsTable from '../../permissions/PermissionsTable';
 import Icon from '../UI/icon';
 import classes from './Permissions.module.css';
 import { TABLE_HEAD_DATA, TABLE_ROW_DATA } from './PermissionsData';
@@ -8,8 +9,7 @@ const Permissions = () => {
     return <Container>
         <Stack className={classes.stack} direction="horizontal" gap={2}>
             <NavLink
-                to="/permissions"
-                exact
+                to="/permissions/role"
                 activeClassName={classes.active}
                 className={classes["stack-item"]}
             >
@@ -52,49 +52,7 @@ const Permissions = () => {
                 </span>
 
             </div>
-            <Table>
-                <thead>
-                    <tr>
-                        {TABLE_HEAD_DATA.map((heading, index) => {
-                            const headCellClass = [classes["table-cell-center"]];
-                            if (index <= 1) headCellClass.pop();
-                            return (
-                                <th className={headCellClass} key={index}>{heading}</th>
-                            )
-                        })}
-                    </tr>
-                </thead>
-                <tbody>
-                    {TABLE_ROW_DATA.map((row, index) => {
-                        const rowCellClass = [classes["table-button"]];
-                        if (row.access === "All Access") {
-                            rowCellClass.pop();
-                            rowCellClass.push(classes["all-access"]);
-                        }
-                        return (
-                            <tr key={index}>
-                                <td>
-                                    <Form.Check
-                                        type="radio"
-                                        id={index}
-                                    />
-                                </td>
-                                <td>
-                                    <NavLink
-                                        to="/permissions/teacher"
-                                        className={classes["role"]}
-                                        exact
-                                    >
-                                        {row.role}
-                                    </NavLink>
-                                </td>
-                                <td><button className={rowCellClass}>{row.access}</button></td>
-                                <td className={classes["table-cell-center"]}>{row.members}</td>
-                                <td className={classes["table-cell-center"]}>{row.updated}</td>
-                            </tr>)
-                    })}
-                </tbody>
-            </Table>
+            <PermissionsTable TABLE_HEAD_DATA={TABLE_HEAD_DATA} TABLE_ROW_DATA={TABLE_ROW_DATA} />
         </div>
     </Container>
 };

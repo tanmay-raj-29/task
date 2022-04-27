@@ -67,28 +67,3 @@
     font-size: 12px;
     font-weight: bold;
 }
-
-.table-button {
-    margin-left: 35px;
-    border-radius: 20px;
-    width: 70%;
-    background-color: rgb(254, 180, 181);
-    color: rgb(254, 30, 28);
-}
-
-.all-access {
-    margin-left: 35px;
-    border-radius: 20px;
-    width: 70%;
-    background-color: rgb(190, 230, 206);
-    color: rgb(95, 195, 138);
-}
-
-.table-cell-center {
-    text-align: center;
-}
-
-.role {
-    text-decoration: none;
-    color: black
-}
