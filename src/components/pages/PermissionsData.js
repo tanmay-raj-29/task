@@ -12,6 +12,52 @@ export const TABLE_ROW_DATA = [
         access: "All Access",
         members: 4,
         updated: "1 min ago",
+        accessTableHead: [
+            "",
+            "Department/Role Name",
+            "Access Level",
+            "Summary",
+            "Last updated",
+            "",
+        ],
+        accessTableRow: [
+            {
+                role: "Enrolling Students",
+                access: "All Access",
+                summary: ["View", "Create", "Edit", "Delete"],
+                "updated": "1 min ago",
+            },
+            {
+                role: "Financials Details",
+                access: "No Access",
+                summary: ["-"],
+                "updated": "1 min ago",
+            },
+            {
+                role: "Furniture Order",
+                access: "Restricted Access",
+                summary: ["View", "Create"],
+                "updated": "1 min ago",
+            },
+            {
+                role: "Technology Equipment",
+                access: "Restricted Access",
+                summary: ["View", "Create"],
+                updated: "1 min ago",
+            },
+            {
+                role: "Organisation Modification",
+                access: "All Access",
+                summary: ["View", "Create", "Edit", "Delete"],
+                updated: "1 min ago",
+            },
+            {
+                role: "Permissions & Access Control",
+                access: "No Access",
+                summary: ["-"],
+                updated: "1 min ago",
+            }
+        ]
     },
     {
         role: "External Faculty",
