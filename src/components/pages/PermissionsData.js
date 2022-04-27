@@ -4,6 +4,7 @@ export const TABLE_HEAD_DATA = [
     "Access Level",
     "No of members",
     "Last updated",
+    "",
 ]
 
 export const TABLE_ROW_DATA = [
@@ -24,31 +25,31 @@ export const TABLE_ROW_DATA = [
             {
                 role: "Enrolling Students",
                 access: "All Access",
-                summary: ["View", "Create", "Edit", "Delete"],
-                "updated": "1 min ago",
+                summary: ["View | Create | Edit | Delete"],
+                updated: "1 min ago",
             },
             {
                 role: "Financials Details",
                 access: "No Access",
                 summary: ["-"],
-                "updated": "1 min ago",
+                updated: "1 min ago",
             },
             {
                 role: "Furniture Order",
                 access: "Restricted Access",
-                summary: ["View", "Create"],
-                "updated": "1 min ago",
+                summary: ["View | Create"],
+                updated: "1 min ago",
             },
             {
                 role: "Technology Equipment",
                 access: "Restricted Access",
-                summary: ["View", "Create"],
+                summary: ["View | Create"],
                 updated: "1 min ago",
             },
             {
                 role: "Organisation Modification",
                 access: "All Access",
-                summary: ["View", "Create", "Edit", "Delete"],
+                summary: ["View | Create | Edit | Delete"],
                 updated: "1 min ago",
             },
             {
