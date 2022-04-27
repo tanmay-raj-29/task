@@ -14,13 +14,23 @@
     color: rgb(95, 195, 138);
 }
 
+.no-access {
+    margin-left: 35px;
+    border-radius: 20px;
+    width: 70%;
+    background-color: rgb(243, 243, 242);
+    color: rgb(203, 202, 202);
+}
+
 .table-cell-center {
     text-align: center;
 }
 
 .role {
     text-decoration: none;
-    color: black
+    color: black;
+    border: none;
+    background-color: white
 }
 
 .table-head {

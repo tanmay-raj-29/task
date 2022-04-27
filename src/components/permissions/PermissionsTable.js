@@ -1,12 +1,13 @@
-import { Form, Table } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Table } from 'react-bootstrap';
+import CollapsibleTableRow from './CollapsibleTableRow';
 import classes from './PermissionsTable.module.css';
+import TableRow from './TableRow';
 
-const PermissionsTable = ({ TABLE_HEAD_DATA, TABLE_ROW_DATA }) => {
+const PermissionsTable = (props) => {
     return <Table>
         <thead>
             <tr className={classes["table-head"]}>
-                {TABLE_HEAD_DATA.map((heading, index) => {
+                {props.TABLE_HEAD_DATA.map((heading, index) => {
                     const headCellClass = [classes["table-cell-center"]];
                     if (index <= 1) headCellClass.pop();
                     return (
@@ -16,33 +17,9 @@ const PermissionsTable = ({ TABLE_HEAD_DATA, TABLE_ROW_DATA }) => {
             </tr>
         </thead>
         <tbody>
-            {TABLE_ROW_DATA.map((row, index) => {
-                const rowCellClass = [classes["table-button"]];
-                if (row.access === "All Access") {
-                    rowCellClass.pop();
-                    rowCellClass.push(classes["all-access"]);
-                }
-                return (
-                    <tr key={index}>
-                        <td>
-                            <Form.Check
-                                type="radio"
-                                id={index}
-                            />
-                        </td>
-                        <td>
-                            <NavLink
-                                to="/permissions/teacher"
-                                className={classes["role"]}
-                                exact
-                            >
-                                {row.role}
-                            </NavLink>
-                        </td>
-                        <td><button className={rowCellClass}>{row.access}</button></td>
-                        <td className={classes["table-cell-center"]}>{row.members}</td>
-                        <td className={classes["table-cell-center"]}>{row.updated}</td>
-                    </tr>)
+            {props.TABLE_ROW_DATA.map((row, index) => {
+                if (props.START_COL) return <TableRow {...props} key={index} row={row} index={index} />;
+                else return <CollapsibleTableRow {...props} key={index} row={row} index={index} />;
             })}
         </tbody>
     </Table>
